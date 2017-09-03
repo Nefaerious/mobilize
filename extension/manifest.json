@@ -13,6 +13,6 @@
   },
 
   "chrome_url_overrides" : {
-    "pageToOverride": "index.html"
+    "newtab": "html/index.html"
   }
 }
