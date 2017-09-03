@@ -6,8 +6,6 @@
   "author":"Sammy Shin",
   "description":"Changing the new tab page into a beautiful agenda",
 
-  "default_locale":"en",
-
   "background": {
     "scripts": ["scripts/server.js"]
   },
