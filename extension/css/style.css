@@ -1,9 +1,41 @@
 body {
     background-image: url("https://source.unsplash.com/random/1920x1080");
 }
+html, body {
+    height: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  min-height: 100%;
+}
+.container:active{
+  -webkit-animation: fadeout 1s;
+}
+@-webkit-keyframes fadeout {
+    from {opacity:1;}
+    to {opacity:0;}
+}
 
 .calendar {
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  opacity: 0;
+  background: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
 
+.calendar:hover {
+  opacity: 1;
+  -webkit-animation: fadein 1s;
+}
+@-webkit-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
 .month {
