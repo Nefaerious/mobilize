@@ -6,10 +6,6 @@
   "author":"Sammy Shin",
   "description":"Changing the new tab page into a beautiful agenda",
 
-  "background": {
-    "scripts": ["scripts/server.js"]
-  },
-
   "chrome_url_overrides" : {
     "newtab": "html/index.html"
   }

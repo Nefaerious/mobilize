@@ -3,13 +3,15 @@ body {
 }
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 .container {
   display: flex;
   max-width: 100% !important;
-  max-height: 100% !important;
   min-height: 100%;
+  text-align: center;
+  vertical-align: center;
 }
 
 .calendar {
@@ -22,6 +24,7 @@ html, body {
   vertical-align: middle;
   -webkit-animation: fadeout .5s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-style:
 }
 
 .calendar:hover {
@@ -48,4 +51,20 @@ html, body {
 
 .day {
 
+}
+
+.clock {
+  display:flex;
+  margin: auto;
+  width: 40%;
+  height: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.time {
+  color: white;
+  margin: auto;
+  font-size: 6rem;
+  text-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
