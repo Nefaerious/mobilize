@@ -1,0 +1,70 @@
+body {
+    background-image: url("https://source.unsplash.com/random/1920x1080");
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 100% !important;
+  min-height: 100%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.calendar {
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  opacity: 0;
+  background: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-animation: fadeout .5s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-style:
+}
+
+.calendar:hover {
+  opacity: 1;
+  -webkit-animation: fadein 1s;
+}
+@-webkit-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadeout {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+
+.month {
+
+}
+
+.week {
+
+}
+
+.day {
+
+}
+
+.clock {
+  display:flex;
+  margin: auto;
+  width: 40%;
+  height: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.time {
+  color: white;
+  margin: auto;
+  font-size: 6rem;
+  text-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

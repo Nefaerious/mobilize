@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name":"Mobilize",
+  "version":"1.0",
+  "author":"Sammy Shin",
+  "description":"Changing the new tab page into a beautiful agenda",
+
+  "chrome_url_overrides" : {
+    "newtab": "html/index.html"
+  }
+}
