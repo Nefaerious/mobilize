@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://source.unsplash.com/random/1920x1080");
+    background-image: url("https://source.unsplash.com/collection/825558/1920x1080");
 }
 html, body {
     height: 100%;
@@ -39,6 +39,10 @@ html, body {
     from {opacity:0;}
     to {opacity:1;}
 }
+@-webkit-keyframes fadeout {
+    from {opacity:1;}
+    to {opacity:0;}
+}
 @keyframes fadeout {
     from {opacity:1;}
     to {opacity:0;}
@@ -56,34 +60,38 @@ html, body {
 .day {
 
 }
+.pageoverlay {
+  background: #000000;
+  opacity: .1;
+}
 
 .segment {
   display:flex;
   margin: auto;
   width: 85%;
-  height: 65%;
+  height: 40%; /*65 originally*/
   text-align: center;
   vertical-align: middle;
 }
 
 .time {
-  color: white;
+  color: #F5F5F5;
   margin: auto;
-  font-size: 6rem;
-  font-weight: 500;
-  text-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  font-size: 6.5rem;
+  font-weight: 400;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   text-align: left;
   line-height: 95%;
-  -webkit-animation: fadeintime 3s;
-  animation: fadeintime 3s;
+  -webkit-animation: fadeintime 2s;
+  animation: fadeintime 2s;
 }
 @-webkit-keyframes fadeintime {
     from {opacity:0;}
-    to {opacity:.9;}
+    to {opacity:.6;}
 }
 @keyframes fadeintime {
   from {opacity:0;}
-  to {opacity:.9;}
+  to {opacity:.6;}
 }
 
 .info {
