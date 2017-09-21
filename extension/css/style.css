@@ -1,11 +1,13 @@
 body {
     background-image: url("https://source.unsplash.com/collection/825558/1920x1080");
+    /*url("https://source.unsplash.com/1920x1080/?sea");
+      url("https://source.unsplash.com/collection/825558/1920x1080");*/
 }
 html, body {
     height: 100%;
     margin: 0;
 }
-
+/* Overlay the entire page */
 .container {
   display: flex;
   max-width: 100% !important;
@@ -13,7 +15,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-
+/* The segment describing a calendar */
 .calendar {
   margin: 60 auto auto auto;
   width: 90%;
@@ -22,11 +24,11 @@ html, body {
   background: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   vertical-align: middle;
-  -webkit-animation: fadeout .5s;
-  animation: fadeout .5s;
+  /*-webkit-animation: fadeout .5s;
+  animation: fadeout .5s;*/
 }
 
-.calendar:hover {
+/*.calendar:hover {
   opacity: 1;
   -webkit-animation: fadein .5s;
   animation: fadein .5s;
@@ -46,7 +48,7 @@ html, body {
 @keyframes fadeout {
     from {opacity:1;}
     to {opacity:0;}
-}
+}*/
 
 
 .month {
@@ -61,8 +63,7 @@ html, body {
 
 }
 .pageoverlay {
-  background: #000000;
-  opacity: .1;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .segment {
@@ -82,17 +83,18 @@ html, body {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   text-align: left;
   line-height: 95%;
-  -webkit-animation: fadeintime 2s;
-  animation: fadeintime 2s;
+  opacity: .8;
+  /*-webkit-animation: fadeintime 2s;
+  animation: fadeintime 2s;*/
 }
-@-webkit-keyframes fadeintime {
+/*@-webkit-keyframes fadeintime {
     from {opacity:0;}
-    to {opacity:.6;}
+    to {opacity:.8;}
 }
 @keyframes fadeintime {
   from {opacity:0;}
-  to {opacity:.6;}
-}
+  to {opacity:.8;}
+}*/
 
 .info {
   min-height: 100%;
