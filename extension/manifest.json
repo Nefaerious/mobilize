@@ -8,5 +8,9 @@
 
   "chrome_url_overrides" : {
     "newtab": "html/index.html"
-  }
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-3.2.1.min.js", "main.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
 }
