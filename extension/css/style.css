@@ -1,70 +1,114 @@
 body {
-    background-image: url("https://source.unsplash.com/random/1920x1080");
+    background-image: url("https://source.unsplash.com/collection/825558/1920x1080");
+    /*url("https://source.unsplash.com/1920x1080/?sea");
+      url("https://source.unsplash.com/collection/825558/1920x1080");*/
 }
 html, body {
     height: 100%;
     margin: 0;
 }
-
+/* Container that holds the entire page */
 .container {
   display: flex;
   max-width: 100% !important;
   min-height: 100%;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
-
+/* The calendar css element */
 .calendar {
   margin: auto;
   width: 80%;
   height: 70%;
-  opacity: 0;
   background: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-animation: fadeout .5s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  font-style:
+  border-radius: 4px;
+  vertical-align: middle;
+  display:none;
 }
-
-.calendar:hover {
-  opacity: 1;
-  -webkit-animation: fadein 1s;
+.calendar-header {
+  width:100%;
+  height: 10%;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: normal #000000;
 }
-@-webkit-keyframes fadein {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-webkit-keyframes fadeout {
-    from {opacity:1;}
-    to {opacity:0;}
-}
-
-
-.month {
+.calendar-content {
 
 }
-
-.week {
+.left-floated {
+  width: auto;
+  height: 100%;
+  margin: 10 auto;
+  float: left;
+}
+.center {
+  height: 100%;
+  margin: 10 auto;
+}
+.right-floated {
+  width: auto;
+  height: 100%;
+  margin: 10 auto;
+  float: right;
 
 }
-
-.day {
-
+.header{
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: gray;
+  font-family: sans-serif;
 }
 
-.clock {
+.btn {
+  border-radius: 4px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px;
+  height: 30%;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+/*Dark overlay on page*/
+.pageoverlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.segment {
   display:flex;
   margin: auto;
-  width: 40%;
-  height: 30%;
+  width: 85%;
+  height: 40%; /*65 originally*/
   text-align: center;
   vertical-align: middle;
 }
 
+/* The actual time element*/
 .time {
-  color: white;
+  color: #F5F5F5;
   margin: auto;
-  font-size: 6rem;
-  text-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 6.5rem;
+  font-weight: 400;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-align: left;
+  line-height: 95%;
+  display: none;
+  opacity: .9;
+}
+/* Notifications side of the chrome extension */
+.notifications {
+  min-height: 100%;
+  width: 40%;
+}
+/* Content side of chrome extension containing items like calendar */
+.content {
+  display: flex;
+  min-height: 100%;
+  width: 60%;
 }
