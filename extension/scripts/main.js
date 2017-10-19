@@ -4,6 +4,12 @@ $(document).ready(function(){
     });
 });
 
+$(function(){
+    $(".content").children().click(function(e){
+        e.stopPropagation()
+    });
+});
+
 $(document).ready(function(){
   $("#time-header").fadeIn("slow");
 });
