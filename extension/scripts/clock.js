@@ -1,5 +1,5 @@
 var time = document.getElementById("time-header");
-var month = document.getElementById("calendar-header");
+var month = document.getElementById("calendar-head");
 
 
 function updateClock(){
