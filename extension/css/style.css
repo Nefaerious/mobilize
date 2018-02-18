@@ -1,7 +1,8 @@
 body {
     max-width: 100%;
-    background-image: url("https://source.unsplash.com/collection/825558/1920x1080");
-    /*background-image: url("https://source.unsplash.com/1920x1080/?sea");*/
+    /*background-image: url("https://source.unsplash.com/collection/825558/1920x1080");*/
+    /*background-image: url("../assets/gif.gif");*/
+    background-image: url("https://source.unsplash.com/1920x1080/?earth");
     background-size: 100% 100%;
 }
 html, body {
@@ -142,7 +143,7 @@ html, body {
   text-align: left;
   line-height: 95%;
   display: none;
-  opacity: .9;
+  opacity: 1;
 }
 /* Notifications side of the chrome extension */
 .notifications {
