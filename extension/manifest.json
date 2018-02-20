@@ -9,8 +9,12 @@
   "chrome_url_overrides" : {
     "newtab": "html/index.html"
   },
-  "content_scripts": [ {
-    "js": [ "jquery-3.2.1.min.js", "main.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
-  }]
+  "background": {
+    "scripts": ["scripts/main.js", "scripts/jquery-3.2.1.min.js", "scripts/background.js", "scripts/clock.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "https://www.unsplash.com/",
+    "https://api.unsplash.com/"
+  ]
 }
