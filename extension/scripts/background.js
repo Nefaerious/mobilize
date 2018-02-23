@@ -1,13 +1,20 @@
+var xhr;
 
-function getRandomImage(){
-  var xhr = new XMLHttpRequest();
+function initializeXHR(){
+  xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
   xhr.onreadystatechange = requestStateChangeHandler;
-  xhr.open("GET", "https://api.unsplash.com/photos/random/", true);
+}
+
+function getImageType(image){
+  xhr.open("GET", "https://api.unsplash.com/photos/random/?w=1920&h=1080&orientation=landscape&featured=true&query=beach", true);
   xhr.setRequestHeader("Authorization", "Client-ID 5db66184bd1158b9377247c8fec383d3d7b187e39343a5a1584eaced7d4323c8");
-  xhr.setRequestHeader("w", "1920");
-  xhr.setRequestHeader("h", "1080");
-  xhr.setRequestHeader("orientation", "landscape");
+  xhr.send();
+}
+
+function getRandomImage(){
+  xhr.open("GET", "https://api.unsplash.com/photos/random/?w=1920&h=1080&orientation=landscape&featured=true", true);
+  xhr.setRequestHeader("Authorization", "Client-ID 5db66184bd1158b9377247c8fec383d3d7b187e39343a5a1584eaced7d4323c8");
   xhr.send();
 }
 
@@ -20,3 +27,6 @@ function requestStateChangeHandler(){
     document.getElementById("image").style.backgroundImage = "url('"+imageURL+"')";
   }
 }
+
+initializeXHR();
+getRandomImage();
